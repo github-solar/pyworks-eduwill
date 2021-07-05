@@ -34,4 +34,40 @@ print(cal2.add(50))
 print(cal2.add(60))
 print(cal2.value)
 
+#3번
+
+#4번
+li = [1, -2, 3, -5, 8, -3]
+
+#print(list(filter(lambda x : x >=0, li)))
+
+#4번을 일반함수로
+
+def over0(a):
+    a2=[]
+    for i in a:
+        if i >= 0:
+           a2.append(i)
+    return a2
+
+li2 = over0(li)
+print(li2)
+
+#6번
+li = [1,2,3,4]
+#print(list(map(lambda x : x *3, li)))
+
+#일반함수로
+def times(a):
+    a2 = []
+    for i in a:
+        a2.append(i*3)
+    return a2
+li2 = times(li)
+print(li2)
+
+
+
+
+
 
