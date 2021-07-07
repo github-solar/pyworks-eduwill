@@ -66,6 +66,48 @@ def times(a):
 li2 = times(li)
 print(li2)
 
+#7번
+d1 = [-8, 2, 7, 5, -3, 5, 0, 1]
+
+max = max(d1)
+min = min(d1)
+
+print(max)
+print(min)
+print(max + min)
+
+#7번 메소드로
+def find_max(li):
+    max = li[0]
+    n = len(li)
+    for i in range(n):
+        if max < li[i]:
+            max = li[i]
+
+    print(max)
+    return max
+
+'''
+n = len(li)
+for i in range(1, n)
+    print(max)
+    
+'''
+max2 = find_max(d1)
+
+print("함수로 최대값", max2)
+
+
+#12번
+import time
+import datetime
+
+now = time.strftime("%Y/%M/%d %H:%M:%S")
+print(now)
+
+now2 = datetime.datetime.now()
+print(now2.strftime("%Y/%M/%d %H:%M:%S"))
+
 
 
 

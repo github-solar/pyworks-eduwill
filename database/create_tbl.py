@@ -9,9 +9,9 @@ def create_table():
     conn = getconn()  #dbconn 모듈에서 getconn 호출 (객체 생성)
     cur = conn.cursor()  # db 작업을 하는 객체(cur)
     # 테이블 생성 - sql언어 DDL
-    sql = """
+    sql =    """
         create table member(
-            mem_num int primary key,
+            mem_num int primary key, #primary key는 중복 제거하는 역할이다.
             name char(20),
             age int
         )

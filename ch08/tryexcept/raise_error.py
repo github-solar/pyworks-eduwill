@@ -1,6 +1,7 @@
 
 class Bird:
     def fly(self):
+        #print('새가 날아갑니다.')
         raise NotImplementedError
 
 class Eagle(Bird):
